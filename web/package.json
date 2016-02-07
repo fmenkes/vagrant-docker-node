@@ -1,0 +1,15 @@
+{
+	"name": "vagrant-docker-node",
+	"version": "1.0.0",
+	"author": "Francis Menkes",
+	"description": "Boilerplate for Vagrant, Docker, Node projects",
+	"main": "server.js",
+	"scripts": {
+		"start": "nodemon server.js"
+	},
+	"dependencies": {
+		"express": "^4.13.3",
+		"nodemon": "^1.8.1"
+	}
+}
+		

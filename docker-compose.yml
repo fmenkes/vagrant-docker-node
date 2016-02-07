@@ -1,0 +1,7 @@
+web:
+  build: .
+  command: sh -c 'npm install ; npm start'
+  ports:
+    - "8080:8080"
+  volumes:
+    - /sync/web:/web
