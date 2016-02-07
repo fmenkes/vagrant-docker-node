@@ -5,19 +5,15 @@ including MongoDB.
 
 To install:
 
-Install the latest version of [Vagrant](https://www.vagrantup.com/)
+Install the latest version of [Vagrant](https://www.vagrantup.com/)  
 Install the latest version of [VirtualBox](https://www.virtualbox.org/)
 
 In the main directory, type `sh start.sh`. The following will occur:
 
-Dependencies will be installed if they aren't already
-
-The host VM will be created and booted up
-
-Docker will be installed on the host VM
-
-docker-compose will build the docker container for the web service
-
+Dependencies will be installed if they aren't already  
+The host VM will be created and booted up  
+Docker will be installed on the host VM  
+docker-compose will build the docker container for the web service  
 gatling-rsync-auto will start
 
 Note that if this process gives an error and cancels at some point, typing `sh start.sh` again may fix it.
