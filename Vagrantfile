@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   
   # Set up the synced folder on the host VM
   config.vm.synced_folder ".", "/sync", type: "rsync",
-    rsync__exclude: [".git/", "node_modules/", ".idea/"]
+    rsync__exclude: [".git/", "node_modules/", "mongo/", ".idea/", ".DS_Store"]
 
   # Specify the VirtualBox box
   config.vm.box = "ubuntu/trusty64"

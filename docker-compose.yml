@@ -1,3 +1,11 @@
+mongo:
+  image: mongo
+  # Stops (?) random crashes from "permission denied"
+  command: sh -c 'chown -R mongodb:mongodb /data/db ; mongod'
+  ports:
+    - "27017:27017"
+  volumes:
+    - /sync/mongo:/data/db
 web:
   build: .
   command: sh -c 'npm install ; npm start'
@@ -5,3 +13,5 @@ web:
     - "8080:8080"
   volumes:
     - /sync/web:/web
+  links:
+    - mongo
